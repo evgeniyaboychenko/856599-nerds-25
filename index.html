@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -33,9 +36,17 @@
             <img src="img/slide1.png" width="698" height="413"  alt="Изображение с мобильными телефонами">
           </figure>
         </div>
-        <button class="slide">Первый слайд</button>
-        <button class="slide">Второй слайд</button>
-        <button class="slide">Третий слайд</button>
+        <ul class="slide">
+          <li>
+            <button class="slide-btn slide-current">Первый слайд</button>
+          </li>
+          <li>
+            <button class="slide-btn">Второй слайд</button>
+          </li>
+          <li>
+            <button class="slide-btn">Третий слайд</button>
+          </li>
+        </ul>
       </section>
 
       <section class="services">
@@ -63,15 +74,15 @@
         <h2 class="visually-hidden">О дизайн-студии Нёрдс</h2>
         <b>Мы-маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
+        <p class="title-services-list">Выполняем заказы на разработку:</p>
         <ul class="about-nerds-services-list">
-          <li class="about-nerds-services-item">
+          <li>
             Веб-сайтов любой сложности
           </li>
-          <li class="about-nerds-services-item">
+          <li>
             Мобильных приложений для iOS и Android
           </li>
-          <li class="about-nerds-services-item">
+          <li>
             Слайдшоу и видео для корпоративных презентаций
           </li>
         </ul>
@@ -79,9 +90,9 @@
         <table class="about-nerds-value">
           <caption>С 2004 года любим точность во всем:</caption>
           <tr>
-            <td>146<span>%</span></td>
-            <td>100<span>%</span></td>
-            <td>50<span>%</span></td>
+            <td>146<sup>%</sup></td>
+            <td>100<sup>%</sup></td>
+            <td>50<sup>%</sup></td>
           </tr>
           <tr>
             <td>Уровень самоотдачи</td>
@@ -94,7 +105,7 @@
       <section class="our-client">
         <ul class="our-client-list">
           <li class="our-client-item">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
               <img src="img/logo-html.png" width="199" height="68" alt="Логотип HTML-Academy">
             </a>
           </li>
@@ -126,7 +137,7 @@
 
       <section class="contacts">
         <h2>NЁRDS DESIGN STUDIO</h2>
-        <address class="contacts">
+        <address class="contacts-address">
           <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
           <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
         </address>
@@ -135,9 +146,9 @@
 
       <section class="social">
         <ul class="social-list">
-          <li class="social-item"><a href="#">ВКонтакте</a></li>
-          <li class="social-item"><a href="#">Фейсбук</a></li>
-          <li class="social-item"><a href="#">Инстаграм</a></li>
+          <li><a class="social-item social-item-vk" href="#">ВКонтакте</a></li>
+          <li><a class="social-item social-item-fb" href="#">Фейсбук</a></li>
+          <li><a class="social-item social-item-insta" href="#">Инстаграм</a></li>
         </ul>
         <p class="offer">
           <b>Давайте дружить, это выгодно!</b>
@@ -149,17 +160,17 @@
     <section class="modal">
       <h2 class="modal-title">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <p class="modal-item">
           <label>Ваше имя:
             <input type="text" name="name" placeholder="Имя Фамилия">
           </label>
         </p>
-        <p>
+        <p class="modal-item">
           <label>Ваше e-mail:
             <input type="email" name="email" placeholder="email@example.com">
           </label>
         </p>
-        <p>
+        <p class="modal-item">
           <label>Текст письма:
             <textarea name="letter" placeholder="В свободной форме"></textarea>
           </label>
