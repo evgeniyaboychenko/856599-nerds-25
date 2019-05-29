@@ -9,23 +9,24 @@
 </head>
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a class="navigation-current">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    <a class="main-header-cart" href="#">Корзина</a>
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a class="navigation-current">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="main-header-cart" href="#">Корзина</a>
+    </div>
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
   </header>
 
-  <main class="container">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
-
+  <main class="container container-inner">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -88,6 +89,7 @@
       </form>
     </section>
 
+    <div class="column-products">
     <section class="sort">
       <h2>Сортировать:</h2>
       <ul class="sort-list">
@@ -148,6 +150,7 @@
         <li class="paginator-item"><a href="#">Следующая</a></li>
       </ul>
     </section>
+    </div>
   </main>
 
   <footer class="main-footer">
@@ -167,6 +170,7 @@
     </section>
 
     <section class="social">
+      <div class="container">
       <ul class="social-list">
         <li><a class="social-item social-item-vk" href="#">ВКонтакте</a></li>
         <li><a class="social-item social-item-fb" href="#">Фейсбук</a></li>
@@ -176,6 +180,7 @@
         <b>Давайте дружить, это выгодно!</b>
         Скидка 10% для друзей из социальных сетей
       </p>
+      </div>
     </section>
   </footer>
 
