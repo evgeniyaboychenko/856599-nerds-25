@@ -200,7 +200,7 @@ a {
 
 }
 
-.principle-desing::after {
+.principle-design::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -295,6 +295,7 @@ a {
   line-height: 0;
 }
 .slide-btn {
+  position: relative;
   width: 18px;
   height: 18px;
   border: 0;
@@ -467,7 +468,7 @@ a {
   padding-top: 10px;
   padding-bottom: 23px;
   padding-left: 0;
-  padding-right: 17px;
+  padding-right: 19px;
   text-align: left;
 
 }
@@ -478,13 +479,13 @@ a {
   font-size: 45px;
   line-height: 45px;
   margin-bottom: 34px;
-  margin-top: 35px;
+  margin-top: 34px;
 
 }
 
 .about-nerds p {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 39px;
 }
 
 .about-nerds .title-services-list {
@@ -528,6 +529,8 @@ a {
   margin-bottom: 47px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: left;
+  margin-left: 16px;
 }
 
 .about-nerds-value tr:nth-child(1) {
@@ -568,13 +571,14 @@ a {
   position: relative;
   margin-right: 97px;
   margin-left: 30px;
+  margin-top: 6px;
 }
 
 .our-client-item:nth-child(1)::after {
   position: absolute;
   content: "";
-  top: 6px;
-  right: -49px;
+  top: 2px;
+  right: -52px;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
@@ -603,13 +607,15 @@ a {
 .our-client-item:nth-child(3)::after {
   position: absolute;
   content: "";
-  top: 0;
-  right: -54px;
+  top: -2px;
+  right: -56px;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
 }
-
+.our-client-item:nth-child(4) {
+  margin-top: 4px;
+}
 .our-client-item a{
   opacity: 0.2;
 }
@@ -1163,7 +1169,11 @@ input[type="number"] {
   width: 1440px;
   margin: 0 auto;
 }
-
+.maps iframe {
+  position: absolute;
+  z-index: 2;
+  border: 0;
+}
 .maps::after {
   position: absolute;
   content: "";
@@ -1182,6 +1192,7 @@ input[type="number"] {
 
 .contacts {
   position: absolute;
+  z-index: 10;
   top: 54px;
   left: 140px;
   box-sizing: border-box;
@@ -1203,7 +1214,7 @@ input[type="number"] {
 
 .contacts-address p {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 
 .contacts-address a {
@@ -1220,7 +1231,7 @@ input[type="number"] {
 }
 
 .contacts-address {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .contacts .button {
@@ -1285,8 +1296,13 @@ input[type="number"] {
 }
 
 .modal {
-  display: block;
-  position: relative;
+  display: none;
+  position: fixed;
+  z-index: 30;
+  top: 50%;
+  left: 50%;
+  margin-top: -295px;
+  margin-left: -480px;
   box-sizing: border-box;
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
@@ -1295,7 +1311,9 @@ input[type="number"] {
   padding-top: 68px;
   padding-bottom: 84px;
 }
-
+.modal-show {
+  display: block;
+}
 .modal-container {
   display: flex;
   flex-wrap: wrap;
@@ -1398,4 +1416,60 @@ input[type="number"] {
 
 .close:active {
   opacity: 0.1;
+}
+@-webkit-keyframes popsup {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes popsup {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    background-color: #ff9985;
+  }
+  30% {
+    background-color: #ff5357;
+  }
+  50% {
+    background-color: #fb3a3a;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    background-color: #ff9985;
+  }
+  30% {
+    background-color: #ff5357;
+  }
+  50% {
+    background-color: #fb3a3a;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+.modal-error {
+  animation-name: colorchange;
+  animation-duration: 0.3s;
 }
