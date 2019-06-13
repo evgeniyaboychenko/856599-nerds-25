@@ -63,6 +63,7 @@ a {
 .main-header-logo img:active {
   opacity: 0.3;
 }
+
 .main-container {
   width: 100%;
 }
@@ -192,51 +193,66 @@ a {
   background-color: #eeeeee;
 }
 
+.container-principle {
+  margin-bottom: 252px;
+}
+
 .principle {
   display: none;
   width: 435px;
   padding-top: 60px;
   padding-bottom: 80px;
-
+  position: relative;
 }
 
 .principle-design::after {
   position: absolute;
+  z-index: 1;
   content: "";
   bottom: 0;
-  right: 52px;
+  left: 431px;
 
   width: 698px;
   height: 413px;
 
   background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .principle-math::after {
   position: absolute;
+  z-index: 1;
   content: "";
   bottom: 0;
-  right: 20px;
+  left: 495px;
 
   width: 663px;
   height: 430px;
 
   background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .principle-work::after {
   position: absolute;
+  z-index: 1;
   content: "";
   bottom: 0;
-  right: 20px;
+  left: 401px;
 
   width: 759px;
   height: 411px;
 
   background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .principle b {
+  /*position: relative;*/
+  /*z-index: 2;*/
   font-weight: 500;
   display: block;
   font-size: 55px;
@@ -246,6 +262,8 @@ a {
 }
 
 .principle p {
+  /*position: relative;*/
+  /*z-index: 2;*/
   margin: 0;
   margin-bottom: 40px;
 }
@@ -256,14 +274,8 @@ a {
   width: 240px;
 }
 
-.container-principle {
-  position: relative;
-  margin-bottom: 252px;
-}
-
 .principle-checked {
   display: block;
-
 }
 
 .gallery {
@@ -280,6 +292,7 @@ a {
 
 .slide {
   position: absolute;
+  z-index: 4;
   bottom: 96px;
   left: 555px;
   display: flex;
@@ -291,9 +304,11 @@ a {
   padding: 0;
   list-style: none;
 }
+
 .slide li {
   line-height: 0;
 }
+
 .slide-btn {
   position: relative;
   width: 18px;
@@ -334,6 +349,7 @@ a {
   height: 2px;
   background-color: #eeeeee;
 }
+
 .our-client::before {
   position: absolute;
   content: "";
@@ -466,7 +482,7 @@ a {
 .about-nerds-value td {
   border-collapse: collapse;
   padding-top: 10px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   padding-left: 0;
   padding-right: 19px;
   text-align: left;
@@ -526,7 +542,7 @@ a {
 }
 
 .about-nerds-value caption {
-  margin-bottom: 47px;
+  margin-bottom: 46px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
@@ -553,7 +569,7 @@ a {
 }
 
 .our-client {
-  margin-bottom: 116px;
+  margin-bottom: 118px;
 }
 
 .our-client-list {
@@ -613,10 +629,12 @@ a {
   height: 52px;
   background-color: #eeeeee;
 }
+
 .our-client-item:nth-child(4) {
   margin-top: 4px;
 }
-.our-client-item a{
+
+.our-client-item a {
   opacity: 0.2;
 }
 
@@ -1166,27 +1184,37 @@ input[type="number"] {
 
 .maps {
   position: relative;
-  width: 1440px;
-  margin: 0 auto;
+  width: 100%;
 }
+
 .maps iframe {
   position: absolute;
-  z-index: 2;
-  border: 0;
+  width: 100%;
+  z-index: 5;
+  border: none;
 }
+
 .maps::after {
   position: absolute;
   content: "";
-  top: 89px;
-  left: 819px;
+  top: 50%;
+  margin-top: -119px;
+  left: 50%;
+  margin-left: 100px;
+  z-index: 3;
   width: 231px;
   height: 190px;
   background-image: url("../img/map-marker.png");
 }
 
 .main-maps {
-  display: block;
-  margin: 0 auto;
+  position: relative;
+  margin: 0;
+  top: 0;
+  left: 50%;
+  margin-left: -720px;
+  width: 1440px;
+  height: 416px;
   line-height: 0;
 }
 
@@ -1194,7 +1222,8 @@ input[type="number"] {
   position: absolute;
   z-index: 10;
   top: 54px;
-  left: 140px;
+  left: 50%;
+  margin-left: -580px;
   box-sizing: border-box;
   padding-right: 50px;
   padding-left: 50px;
@@ -1205,7 +1234,7 @@ input[type="number"] {
 
 .contacts h2 {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   padding: 0;
   font-weight: 700;
   font-size: 18px;
@@ -1214,7 +1243,7 @@ input[type="number"] {
 
 .contacts-address p {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 .contacts-address a {
@@ -1248,7 +1277,7 @@ input[type="number"] {
 .social .container {
   display: flex;
   align-items: center;
-  padding: 60px 0;
+  padding: 58px 0;
 }
 
 .social-list {
@@ -1311,9 +1340,13 @@ input[type="number"] {
   padding-top: 68px;
   padding-bottom: 84px;
 }
+
 .modal-show {
   display: block;
+  animation-name: popsup;
+  animation-duration: 0.5s;
 }
+
 .modal-container {
   display: flex;
   flex-wrap: wrap;
@@ -1417,6 +1450,7 @@ input[type="number"] {
 .close:active {
   opacity: 0.1;
 }
+
 @-webkit-keyframes popsup {
   0% {
     -webkit-transform: translateY(1000px);

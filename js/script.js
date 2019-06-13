@@ -77,30 +77,36 @@ form.addEventListener("submit", function (evt) {
 
 btn1.addEventListener("click", function (evt) {
   evt.preventDefault();
-  slide1.classList.add("principle-checked");
+
   slide2.classList.remove("principle-checked");
   slide3.classList.remove("principle-checked");
-  btn1.classList.add("slide-current");
+  slide1.classList.add("principle-checked");
+
   btn2.classList.remove("slide-current");
   btn3.classList.remove("slide-current");
+  btn1.classList.add("slide-current");
 });
 
 btn2.addEventListener("click", function (evt) {
   evt.preventDefault();
-  slide2.classList.add("principle-checked");
+
   slide1.classList.remove("principle-checked");
   slide3.classList.remove("principle-checked");
-  btn2.classList.add("slide-current");
+  slide2.classList.add("principle-checked");
+
   btn1.classList.remove("slide-current");
   btn3.classList.remove("slide-current");
+  btn2.classList.add("slide-current");
 });
 
 btn3.addEventListener("click", function (evt) {
   evt.preventDefault();
-  slide3.classList.add("principle-checked");
+
   slide1.classList.remove("principle-checked");
   slide2.classList.remove("principle-checked");
-  btn3.classList.add("slide-current");
+  slide3.classList.add("principle-checked");
+
   btn1.classList.remove("slide-current");
   btn2.classList.remove("slide-current");
+  btn3.classList.add("slide-current");
 });
