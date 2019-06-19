@@ -1,5 +1,5 @@
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -68,21 +68,36 @@ a {
 }
 
 .main-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-top: 49px;
   padding-bottom: 18px;
 }
 
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 500px;
   padding: 0;
@@ -104,8 +119,13 @@ a {
 }
 
 .menu-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   max-width: 140px;
   padding: 0;
@@ -170,6 +190,7 @@ a {
 .button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
+  -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
@@ -178,7 +199,7 @@ a {
 }
 
 .container-principle {
-  margin-bottom: 252px;
+  margin-bottom: 251px;
 }
 
 .principle {
@@ -244,6 +265,7 @@ a {
 
 .principle .button {
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 240px;
 }
@@ -269,7 +291,11 @@ a {
   z-index: 4;
   bottom: 96px;
   left: 555px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 88px;
   height: 18px;
@@ -330,14 +356,18 @@ a {
 }
 
 .services {
-  margin-bottom: 122px;
+  margin-bottom: 123px;
 }
 
 .services-list {
   position: relative;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   list-style: none;
 }
@@ -361,6 +391,7 @@ a {
 
 .services-item .button {
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 160px;
 }
@@ -430,7 +461,11 @@ a {
 }
 
 .container-about-nerds {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -444,14 +479,15 @@ a {
 
 .about-nerds-value {
   width: 360px;
+  border-spacing: 0;
 }
 
 .about-nerds-value td {
   border-collapse: collapse;
-  padding-top: 10px;
-  padding-bottom: 24px;
-  padding-left: 0;
-  padding-right: 19px;
+  padding-top: 12px;
+  padding-bottom: 25px;
+  padding-left: 1px;
+  padding-right: 21px;
   text-align: left;
 }
 
@@ -486,7 +522,7 @@ a {
 }
 
 .about-nerds-services-list a {
-  padding-left: 35px;
+  padding-left: 36px;
   position: relative;
   color: #000000;
 }
@@ -528,8 +564,10 @@ a {
 }
 
 .about-nerds-value sup {
-  vertical-align: middle;
-  font-size: 26px;
+  font-size: 58%;
+  top: -9px;
+  line-height: 10px;
+  vertical-align: top;
 }
 
 .our-client {
@@ -537,8 +575,13 @@ a {
 }
 
 .our-client-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -549,7 +592,7 @@ a {
   position: relative;
   margin-right: 97px;
   margin-left: 30px;
-  margin-top: 6px;
+  margin-top: 7px;
 }
 
 .our-client-item:nth-child(1)::after {
@@ -618,16 +661,20 @@ a {
   font-size: 55px;
   line-height: 55px;
   background-color: #eeeeee;
-  padding-top: 59px;
+  padding-top: 60px;
   padding-bottom: 108px;
-  margin-left: -2px;
-  margin-bottom: 54px;
+  margin-left: -4px;
+  margin-bottom: 55px;
 }
 
 .container-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .column-products {
@@ -654,6 +701,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  letter-spacing: 0.05px;
   text-transform: uppercase;
 }
 
@@ -663,7 +711,6 @@ a {
 
 .price-list legend {
   margin-bottom: 48px;
-  padding-top: 2px;
   padding-bottom: 0;
 }
 
@@ -722,8 +769,14 @@ a {
 }
 
 .range-value-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -741,6 +794,8 @@ a {
   text-transform: uppercase;
   color: #283136;
   background-color: #eeeeee;
+
+  -webkit-box-sizing: border-box;
 
   box-sizing: border-box;
   width: 80px;
@@ -840,12 +895,15 @@ input[type="number"] {
 .filter-button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
+  -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-bottom: 51px;
+  margin-bottom: 54px;
 }
 
 .sort h2 {
@@ -854,13 +912,17 @@ input[type="number"] {
   margin-right: 265px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   text-transform: uppercase;
+  padding-top: 3px;
 }
 
 .sort-list,
 .sort-order-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -875,7 +937,7 @@ input[type="number"] {
 
 .sort-list {
   width: 310px;
-  padding-top: 3px;
+  /*padding-top: 3px;*/
 }
 
 .sort-list li {
@@ -946,16 +1008,20 @@ input[type="number"] {
 }
 
 .products-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .product {
   display: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #eeeeee;
   width: 362px;
@@ -989,6 +1055,7 @@ input[type="number"] {
   position: relative;
   margin-right: 40px;
   margin-bottom: 32px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 360px;
   border: 1px solid rgba(0, 1, 1, 0.1);
@@ -1007,6 +1074,7 @@ input[type="number"] {
   height: 14px;
   background-color: #ffffff;
   border-radius: 50%;
+  -webkit-box-shadow: 25px 0 0 0 #ffffff, 48px 0 0 0 #ffffff;
   box-shadow: 25px 0 0 0 #ffffff, 48px 0 0 0 #ffffff;
 }
 
@@ -1017,6 +1085,7 @@ input[type="number"] {
 .products-item:hover {
   border: 1px solid rgba(77, 77, 77, 0.1);
   border-top: 40px solid rgba(68, 68, 68, 1);
+  -webkit-box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
   box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 }
 
@@ -1049,6 +1118,7 @@ input[type="number"] {
 
 .product-button {
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 200px;
   margin: 0 auto;
@@ -1065,7 +1135,10 @@ input[type="number"] {
 }
 
 .paginator-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -1074,9 +1147,10 @@ input[type="number"] {
 
 .paginator-item a {
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 50px;
-  padding: 15px 19px;
+  padding: 16px 19px;
   margin-right: 11px;
   font-weight: 500;
   font-size: 16px;
@@ -1100,17 +1174,18 @@ input[type="number"] {
 .paginator-item a:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
+  -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-
 }
 
 .pagination-item-current a,
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
-  padding: 12px 16px;
+  padding: 13px 16px;
   color: #000000;
   background-color: #ffffff;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: 3px solid #dbdbdb;
 }
@@ -1122,22 +1197,33 @@ input[type="number"] {
 
 .maps {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
   width: 100%;
 }
 
-.maps iframe {
-  position: absolute;
-  width: 100%;
-  z-index: 5;
-  border: none;
+.main-maps {
+  margin: 0;
+  width: 1440px;
+  height: 416px;
+  background-image: url("../img/maps.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 0;
 }
 
-.maps::after {
+.main-maps::after {
   position: absolute;
   content: "";
   top: 50%;
-  margin-top: -119px;
   left: 50%;
+  margin-top: -119px;
   margin-left: 100px;
   z-index: 3;
   width: 231px;
@@ -1145,15 +1231,14 @@ input[type="number"] {
   background-image: url("../img/map-marker.png");
 }
 
-.main-maps {
-  position: relative;
-  margin: 0;
+.maps iframe {
+  position: absolute;
+  z-index: 5;
   top: 0;
-  left: 50%;
-  margin-left: -720px;
-  width: 1440px;
+  left: 0;
+  width: 100%;
   height: 416px;
-  line-height: 0;
+  border: none;
 }
 
 .contacts {
@@ -1162,17 +1247,18 @@ input[type="number"] {
   top: 54px;
   left: 50%;
   margin-left: -580px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-right: 50px;
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 49px;
   width: 319px;
   background-color: #ffffff;
 }
 
 .contacts h2 {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   padding: 0;
   font-weight: 700;
   font-size: 18px;
@@ -1198,11 +1284,12 @@ input[type="number"] {
 }
 
 .contacts-address {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 .contacts .button {
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 219px;
   margin-bottom: 47px;
@@ -1213,7 +1300,11 @@ input[type="number"] {
 }
 
 .social .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 58px 0;
 }
@@ -1222,15 +1313,25 @@ input[type="number"] {
   margin: 0;
   padding: 0;
   width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   list-style: none;
   margin-right: 139px;
 }
 
 .social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 80px;
   height: 80px;
@@ -1269,8 +1370,10 @@ input[type="number"] {
   margin-top: -295px;
   margin-left: -480px;
   width: 960px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   padding: 0 100px;
   padding-top: 68px;
@@ -1279,13 +1382,20 @@ input[type="number"] {
 
 .modal-show {
   display: block;
+  -webkit-animation-name: popsup;
   animation-name: popsup;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
 .modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1322,6 +1432,7 @@ input[type="number"] {
 
 .modal-item input {
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 14px 14px;
@@ -1331,6 +1442,7 @@ input[type="number"] {
 .modal-item-textarea textarea {
   width: 100%;
   height: 118px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 9px 13px;
   resize: none;
@@ -1359,9 +1471,15 @@ input[type="number"] {
   border: 2px solid #000000;
 }
 
+.modal-item input:invalid {
+  border-color: #e74246;
+  color: #e74246;
+}
+
 .modal .button {
   border: none;
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 260px;
 }
@@ -1388,18 +1506,22 @@ input[type="number"] {
 
 @-webkit-keyframes popsup {
   0% {
+    -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
   }
   100% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
 
 @keyframes popsup {
   0% {
+    -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
   }
   100% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
@@ -1435,6 +1557,8 @@ input[type="number"] {
 }
 
 .modal-error {
+  -webkit-animation-name: colorchange;
   animation-name: colorchange;
+  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
 }
